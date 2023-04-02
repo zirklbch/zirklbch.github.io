@@ -8,8 +8,8 @@
   "resources": {
     "assembly": {
       "Blazored.LocalStorage.dll": "sha256-6RRoYeDP3d0xabXmcCMF66wXeJlXVPem28Trs8sQiis=",
-      "MetraCommuter.Shared.dll": "sha256-f2uU736T5PsPKzLmP\/1phSvPSfHaCSZBT\/Uvh6RcDwc=",
-      "MetraCommuter.Web.dll": "sha256-\/eNDsYDzbxrLdoRApS7CR328hJ8Rak6F8OTvjphx7Cg=",
+      "MetraCommuter.Shared.dll": "sha256-+xtckNZCPoBRI694kGytF60cx4PPKdiKTVa3rAVQdZE=",
+      "MetraCommuter.Web.dll": "sha256-H5uHrpyUb3aIokSGFti5\/P2Y9xsv0P90JdrYO9Lgqfk=",
       "Microsoft.AspNetCore.Components.dll": "sha256-nqYu3FGq1VLPG38OWsQc3z+8wRAj9vvw+il9qzx1RU4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-28eRWdsCWhkRUmAxIsHGkJhPeuY3i174C1Sg09zCnTg=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-4GXVf\/gq4MOtZQaeXR3EJjpTc5xHpnf4hLeZJF5hdb8=",

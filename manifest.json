@@ -1,7 +1,7 @@
 {
 	"name": "Metra Commuter",
 	"short_name": "Commuter",
-	"start_url": "./schedule",
+	"start_url": "./",
 	"display": "standalone",
 	"background_color": "#0052a7",
 	"theme_color": "#0052a7",
