@@ -29,7 +29,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-i96nK1LH+y3MByqqUxmOTVWUwnvw7SYpe6qJusrRMIA=",
+      "hash": "sha256-6Wp1Q3mpdcqgeEfW3J70uFpggdXII0Q+uY2Qk3Rg2jk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -37,11 +37,11 @@
       "url": "_framework\/Blazored.LocalStorage.dll"
     },
     {
-      "hash": "sha256-wV7mDXukTvaRo0QkZG31VdXv3pfzeR4Ws+knvYFCtYg=",
+      "hash": "sha256-a0rRpAnCMFr5xW42AgrCIxNa9Sei0F+dPzF4XdeW7Mw=",
       "url": "_framework\/MetraCommuter.Shared.dll"
     },
     {
-      "hash": "sha256-FbMndsxw+MpWCRKB01pr6rEEN2SDHYazETJzdNmUOGw=",
+      "hash": "sha256-UAcvMCX91\/bayBTRl7AKVw\/rvDkToPEiIWfErLH6ECg=",
       "url": "_framework\/MetraCommuter.Web.dll"
     },
     {
@@ -157,7 +157,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-ERIDJQ\/KxYO0Ph5E3v3XAKJMucyi+8l7mZHvG5KrSBQ=",
+      "hash": "sha256-rrP6UMKfYLUrkgbq7OexCitWUi2uKXT9WFt5pYdDnlQ=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -381,5 +381,5 @@
       "url": "scripts\/settings.js"
     }
   ],
-  "version": "MXucBaYZ"
+  "version": "ctjwH1qJ"
 };

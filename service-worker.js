@@ -34,17 +34,38 @@ async function onActivate(event) {
 }
 
 async function onFetch(event) {
-	let cachedResponse = null;
-	if (event.request.method === 'GET') {
-		// For all navigation requests, try to serve index.html from cache
-		// If you need some URLs to be server-rendered, edit the following check to exclude those URLs
-		const shouldServeIndexHtml = event.request.mode === 'navigate';
+	self.addEventListener('fetch', event => {
+		// Check if the request is for tripUpdates.json
+		if (event.request.url.indexOf('tripUpdates.json') > -1) {
+			// If so, use the network first strategy
+			event.respondWith(
+				fetch(event.request)
+					.then(response => {
+						// If the request succeeds, clone and store the response in the cache
+						const clone = response.clone();
+						caches.open(cacheName).then(cache => cache.put(event.request, clone));
+						return response;
+					})
+					.catch(() => {
+						// If the request fails, try to get the response from the cache
+						return caches.match(event.request);
+					})
+			);
+		} else {
+			// For other requests, use your existing caching strategy
+			let cachedResponse = null;
+			if (event.request.method === 'GET') {
+				// For all navigation requests, try to serve index.html from cache
+				// If you need some URLs to be server-rendered, edit the following check to exclude those URLs
+				const shouldServeIndexHtml = event.request.mode === 'navigate';
 
-		const request = shouldServeIndexHtml ? 'index.html' : event.request;
-		const cache = await caches.open(cacheName);
-		cachedResponse = await cache.match(request);
-	}
+				const request = shouldServeIndexHtml ? 'index.html' : event.request;
+				const cache = await caches.open(cacheName);
+				cachedResponse = await cache.match(request);
+			}
 
-	return cachedResponse || fetch(event.request);
+			return cachedResponse || fetch(event.request);
+		}
+	});
 }
-/* Manifest version: MXucBaYZ */
+/* Manifest version: ctjwH1qJ */
