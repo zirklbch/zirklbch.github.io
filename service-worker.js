@@ -34,7 +34,7 @@ async function onActivate(event) {
 }
 
 async function onFetch(event) {
-	self.addEventListener('fetch', event => {
+	self.addEventListener('fetch', async event => {
 		// Check if the request is for tripUpdates.json
 		if (event.request.url.indexOf('tripUpdates.json') > -1) {
 			// If so, use the network first strategy
